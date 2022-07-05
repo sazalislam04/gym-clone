@@ -10,3 +10,58 @@
 body {
     font-family: 'Nunito', sans-serif;
 }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #111;
+}
+
+.type-header {
+    display: flex;
+    margin-right: 150px;
+}
+
+.header-title {
+    margin-left: 150px;
+    font-size: 45px;
+    text-transform: capitalize;
+    color: #fff;
+    font-style: italic;
+    border-right: 5px solid crimson;
+    overflow: hidden;
+    width: 0;
+    letter-spacing: .4rem;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3s forwards;
+    font-weight: 600;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: crimson;
+    }
+}
