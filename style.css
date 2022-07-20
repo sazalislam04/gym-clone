@@ -18,16 +18,49 @@ body {
 }
 
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
-.header {
-    background-color: #111;
+.section {
+    margin: 100px 0;
 }
 
-.type-header {
-    display: flex;
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 14px 20px;
+    background: red;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    transition: .4s ease;
+}
+
+.btn:hover {
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px red;
+}
+
+.header {
+    background-color: black;
+
+}
+
+.header-container {
+    height: 95vh;
+    width: 100%;
+}
+
+.brand {
     margin-right: 150px;
 }
 
@@ -64,4 +97,274 @@ body {
     50% {
         border-color: crimson;
     }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #f0f0f0;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.left-content {
+    width: 60%;
+    color: #fff;
+}
+
+.left-content .red {
+    color: red;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.left-content h1 {
+    font-size: 55px;
+    margin-top: 20px;
+}
+
+.left-content .para {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.right-img {
+    margin-top: -50px;
+    max-width: 550px;
+}
+
+.right-img img {
+    width: 100%;
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    border: 1px solid rgb(0, 0, 0, 0.4);
+    transition: transform 0.4s ease-in;
+}
+
+.card img {
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+.card .three {
+    width: 150px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border: 1px solid red;
+}
+
+.card p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#about {
+    background: black;
+}
+
+.flex-container {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.about-left {
+    border-top: 1px solid red;
+}
+
+.about-right {
+    color: white;
+    padding: 0 20px;
+    border-top: 1px solid grey;
+    margin-bottom: 20px;
+}
+
+.about-right h2 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-right p {
+    line-height: 1.5;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.about-right ul li {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.about-img {
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.about-img img {
+    transform: skewY(-15deg);
+    width: 100%;
+}
+
+#form {
+    background: url(./image/shape/Group_33094_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 700px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    align-items: center;
+}
+
+.flex h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.chat-btn {
+    padding: 14px 20px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.chat-btn:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    max-width: 450px;
+    height: 480px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px rgb(0, 0, 0, 0.2)
+}
+
+.service-card .service-card-content {
+    padding: 10px 15px;
+}
+
+.service-card .service-card-content h3 {
+    color: red;
+}
+
+.service-card .service-card-content h2,
+span {
+    color: #111;
+}
+
+.service-card .service-card-content h2 {
+    font-size: 28px;
+}
+
+.service-card .service-card-content .card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.service-card .service-card-content .card-price h3 {
+    color: #222;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.service-card .service-card-content .card-price a {
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.service-card .service-card-img img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer .social-link {
+    margin-top: 50px;
+}
+
+footer .social-link a {
+    padding: 0 15px;
+    color: #111;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+footer .social-link a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+footer .copyright {
+    margin-top: 8px;
+    color: #333;
+    margin-bottom: 20px;
 }
